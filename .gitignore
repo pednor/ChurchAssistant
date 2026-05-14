@@ -1,0 +1,70 @@
+# Home Assistant .gitignore (ChurchAssistant)
+# Exclude sensitive and generated files
+
+# Runtime files
+.HA_VERSION
+.ha_run.lock
+.cloud/
+.ha_cursor_agent_key
+
+# MCP config (contains private tokens)
+.vscode/mcp.json
+
+# Secrets and configuration
+secrets.yaml
+configuration.yaml.backup
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+home-assistant.log*
+home-assistant.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Home Assistant specific
+.storage/*
+!.storage/core.area_registry
+!.storage/lovelace*
+# .storage/core.device_registry and .storage/core.entity_registry intentionally NOT
+# allowlisted — runtime churn (HA writes them constantly). Recovery covered by HA Backups.
+deps/
+tts/
+www/
+backups/
+
+# Custom components (managed by HACS, not tracked in Git)
+custom_components/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.obsidian/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Scripts with tokens/credentials
+scripts/*.py
+
+# Claude Code config (contains MCP tokens)
+.mcp.json
+.claude/*
+!.claude/settings.json
+!.claude/skills/
+!.claude/rules/
+!.claude/hooks/
+
+# Runtime cache and binaries
+.cache/
+piper/
+reference/.obsidian/
