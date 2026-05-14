@@ -12,7 +12,7 @@ This is the manifest for all reference docs in this repo. Load only what matches
 
 | Doc | Type | Status | agent_use |
 |---|---|---|---|
-| _(none yet — populate as the system is built out)_ | — | — | — |
+| [system/HA_SYSTEM_REFERENCE.md](system/HA_SYSTEM_REFERENCE.md) | system | active | system-context, diagnostics, automation, dashboard, setup, hardware |
 
 ## Conventions
 
