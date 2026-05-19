@@ -12,16 +12,16 @@ When context compacts, preserve: current task state, list of modified files, and
 Home Assistant configuration repository — HAOS instance at the church, synced via GitHub.
 
 ```
-Mac (/Volumes/FOH_LaCie/VSCode/ChurchAssistant/)  ↕ git push/pull
-GitHub (pednor/ChurchAssistant)                    — source of truth (TBD: create repo)
+Mac (~/VSCode/ChurchAssistant/)                   ↕ git push/pull (HTTPS, osxkeychain)
+GitHub (pednor/ChurchAssistant)                   — source of truth
 HA (/homeassistant on churchassistant)            ↕ git push/pull (PAT auth, TBD: bootstrap as git repo)
 ```
 
-- **HA host**: `churchassistant` (LAN hostname)
+- **HA host**: `churchassistant` (LAN hostname; also reachable as Tailscale device `churchassistant`)
 - **SSH access**: `ssh hassio@churchassistant` (key-based, user `hassio` — sudoer)
 - **Main files**: `configuration.yaml` · `automations.yaml` · `scripts.yaml` · `scenes.yaml`
 
-> **Bootstrap status (2026-05-13):** Workspace scaffolded; config rsynced from churchassistant; local git initialized. **Not yet done:** create GitHub repo `pednor/ChurchAssistant`, push initial commit, initialize `/homeassistant` on churchassistant as a git checkout. `/ha-sync` and `/mac-sync` will not function until the HA-side bootstrap is complete.
+> **Bootstrap status (2026-05-19):** Workspace scaffolded; config rsynced from churchassistant; GitHub repo `pednor/ChurchAssistant` created and pushed; this Mac's local checkout reconciled with the other-Mac scaffold (see `reference/plans/BOOTSTRAP_PLAN.md`). **Still pending:** initialize `/homeassistant` on churchassistant as a git checkout, and install MCP add-ons. `/ha-sync` and `/mac-sync` will not function until the HA-side bootstrap is complete.
 
 ---
 
