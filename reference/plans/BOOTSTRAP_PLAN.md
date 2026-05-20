@@ -89,7 +89,7 @@ Done.
 These are next steps after the scaffold:
 
 1. **Install MCP add-ons on church HA** — `HA MCP Server` and `HA Vibecode Agent` from the add-on store. Capture the token / agent key into `.mcp.json` (currently placeholder values).
-2. **Initialize `/homeassistant` on church HA as a git checkout** — `git init` in `/homeassistant`, configure `pednor/ChurchAssistant` remote with PAT auth, initial commit, set `main` upstream. Until this is done, `/ha-sync` and `/mac-sync` will not function.
+2. ~~**Initialize `/homeassistant` on church HA as a git checkout**~~ ✅ Done 2026-05-19. `/homeassistant` on church HA is a git repo tracking `origin/main` via PAT-embedded HTTPS. HA-side baseline commit + merge with origin completed; first round-trip Mac↔GitHub↔HA verified clean.
 3. ~~**Clone church HA repo into this Mac directory**~~ ✅ Done 2026-05-19 via cross-Mac reconciliation.
 4. **Refresh `/ha-health` and `/ha-status` against church** — `HA_SYSTEM_REFERENCE.md` baseline is from 2026-05-14; re-run after MCP add-ons are wired and refresh that doc.
 5. **Restart this Claude Code session from `~/VSCode/ChurchAssistant/`** — so MCP picks up the `.mcp.json` (after step 1) and points at church HA, not home.
