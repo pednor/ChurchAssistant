@@ -1,0 +1,32 @@
+- id: '1778800413153'
+  alias: MicWho Displays On
+  description: ''
+  triggers:
+  - at: 07:00:00
+    weekday:
+    - sun
+    platform: time
+  conditions: []
+  actions:
+  - action: switch.turn_on
+    metadata: {}
+    target:
+      entity_id: switch.sound_room_micwho_displays
+    data: {}
+  mode: single
+- id: '1779021823624'
+  alias: MicWho Displays Off
+  description: ''
+  triggers:
+  - at: '13:30:00'
+    weekday:
+    - sun
+    platform: time
+  conditions: []
+  actions:
+  - action: switch.turn_off
+    metadata: {}
+    target:
+      entity_id: switch.sound_room_micwho_displays
+    data: {}
+  mode: single

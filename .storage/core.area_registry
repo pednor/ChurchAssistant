@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "minor_version": 9,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "floor_id": "main",
+        "humidity_entity_id": null,
+        "icon": "mdi:monitor-speaker",
+        "id": "sound_room",
+        "labels": [],
+        "name": "Sound Room",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2026-05-03T02:47:29.536039+00:00",
+        "modified_at": "2026-05-03T02:47:29.536045+00:00"
+      }
+    ]
+  }
+}
